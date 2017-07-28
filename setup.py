@@ -2,16 +2,16 @@
 
 from distutils.core import setup
 
-setup(name='Distutils',
+setup(name='nbconvert-html-embedded-exporter',
       version='1.0',
-      description='Jupyter Embedded HTML Exporter,
+      description='nbconvert Embedded HTML Exporter',
       author='Gabriel Nützi',
       author_email='gnuetzi@gmail.com',
       entry_points = {
               'nbconvert.exporters': [
-                  'htmlembedded = nbconvert-htmlembeddedexporter:HTMLEmbeddedExporter',
+                  'htmlembedded = nbconvert-html-embedded-exporter:HTMLEmbeddedExporter',
               ],
           }
-      url='https://www.python.org/sigs/distutils-sig/',
-      packages=['distutils', 'distutils.command'],
+      url='https://github.com/gabyx/nbconvert-html-embedded-exporter',
+      packages=[],
      )
